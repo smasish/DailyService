@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:id="@+id/email_view">
+
+
+
+
+
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_marginLeft="20dip"
+		android:layout_marginRight="20dip"
+		android:layout_marginTop="15dip"
+		android:id="@+id/fieldlayout"
+
+		android:gravity="center_horizontal" android:layout_height="wrap_content">
+		<EditText android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="To"
+			android:id="@+id/email_addressField"
+			android:textSize="18sp" android:textStyle="bold" />
+		<EditText android:layout_width="fill_parent"
+		android:id="@+id/email_subjectField"
+		android:layout_below="@id/email_addressField"
+			android:layout_height="wrap_content" android:hint="Subject"
+			android:textSize="18sp" android:textStyle="bold" />
+			
+			<EditText android:layout_width="fill_parent"
+		android:id="@+id/email_contentField"
+			android:layout_height="wrap_content" android:hint="write your feedback"
+			android:lines="4"
+
+			android:layout_below="@id/email_subjectField"
+			android:textSize="18sp" android:textStyle="bold" />
+			
+			<Button android:layout_width="fill_parent"
+		android:id="@+id/email_sendButton"
+		android:layout_below="@id/email_contentField"
+			android:layout_height="wrap_content" android:text="Send"
+			android:textSize="18sp" android:textStyle="bold" />
+
+	</RelativeLayout>
+
+
+	
+	
+	
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_below="@id/fieldlayout"
+		android:layout_marginTop="10dip"
+		android:layout_height="wrap_content" >
+
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/email_backButton" android:layout_alignParentLeft="true"
+			></ImageButton>
+		
+
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:id="@+id/email_quitButton" android:layout_alignParentRight="true"
+			></ImageButton>
+
+
+		<com.google.android.gms.ads.AdView
+			android:id="@+id/adView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+			ads:adSize="BANNER"
+			ads:adUnitId="@string/banner_ad_unit_id">
+		</com.google.android.gms.ads.AdView>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+
+</ScrollView>

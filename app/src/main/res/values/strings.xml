@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DailyServiceServey</string>
+
+    <string name="hello_world">Welcome to Daily Service App!</string>
+
+    <string name="servey">This is just a survey to know the requirement of user.Please
+        let us know what kind of app you need in your daily life.Based on your feedback, We will try to make Daily Service app
+        so that all user can use this app and get their desired benefits.!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+
+
+    <string name="banner_ad_unit_id">ca-app-pub-2884225447516609/2122390775</string>
+</resources>
